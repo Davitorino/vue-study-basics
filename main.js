@@ -4,5 +4,6 @@ let app = new Vue({
     product: 'Socks',
     description: 'The product above is cheapy',
     image: './assets/vmSocks-green.jpg',
+    inStock: true,
   }
 })
