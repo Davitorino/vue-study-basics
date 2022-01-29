@@ -3,7 +3,10 @@
     <div class="event-header">
       <span class="eyebrow">@{{ event.time }} on {{ event.date }}</span>
       <h1 class="title">{{ event.title }}</h1>
-      <h5>Organized by {{ event.organizer }}</h5>
+      <h5>
+        Organized by
+        {{ event.organizer.name ? event.organizer.name : event.organizer }}
+      </h5>
       <h5>Category: {{ event.category }}</h5>
     </div>
     <BaseIcon name="map"><h2>Location</h2></BaseIcon>

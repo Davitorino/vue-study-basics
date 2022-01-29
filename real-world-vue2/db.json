@@ -71,6 +71,34 @@
           "name": "Mary Gordon"
         }
       ]
+    },
+    {
+      "id": 4614970,
+      "category": "nature",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "teste",
+      "description": "teste do davi",
+      "location": "floripa",
+      "date": "2022-01-05T17:32:00.000Z",
+      "time": "17:00",
+      "attendees": []
+    },
+    {
+      "id": 9252632,
+      "category": "food",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "comidinhas",
+      "description": "comidinhas do davi",
+      "location": "ingleses",
+      "date": "2022-01-08T17:41:00.000Z",
+      "time": "12:00",
+      "attendees": []
     }
   ]
 }
