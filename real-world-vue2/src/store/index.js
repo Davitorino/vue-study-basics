@@ -1,12 +1,18 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import EventService from '@/services/EventService.js'
+import * as user from '@/store/modules/user.js'
+import * as event from '@/store/modules/event.js'
+import * as notification from '@/store/modules/notification.js'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
+  modules: {
+    user,
+    event,
+    notification,
+  },
   state: {
-    user: { id: 'abc123', name: 'Adam Jahr' },
     categories: [
       'sustainability',
       'nature',
@@ -16,24 +22,5 @@ export default new Vuex.Store({
       'food',
       'community',
     ],
-    events: [],
-  },
-  mutations: {
-    ADD_EVENT(state, event) {
-      state.events.push(event)
-    },
-  },
-  actions: {
-    createEvent({ commit }, event) {
-      return EventService.postEvent(event).then(() => {
-        commit('ADD_EVENT', event)
-      })
-    },
-  },
-  modules: {},
-  getters: {
-    getEventById: (state) => (id) => {
-      return state.events.find((event) => event.id === id)
-    },
   },
 })
