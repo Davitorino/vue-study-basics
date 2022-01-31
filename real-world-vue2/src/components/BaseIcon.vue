@@ -39,7 +39,6 @@ export default {
   color: rgba(0, 0, 0, 0.4);
   font-size: 1rem;
   font-weight: 600;
-  margin-right: 6px;
 }
 .icon {
   stroke: currentColor;
@@ -47,5 +46,6 @@ export default {
   stroke-linecap: round;
   stroke-linejoin: round;
   fill: none;
+  margin-right: 6px;
 }
 </style>
