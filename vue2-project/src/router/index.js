@@ -1,16 +1,21 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import EventCreate from '../pages/EventCreate.vue'
-import EventList from '../pages/EventList.vue'
-import EventShow from '../pages/EventShow.vue'
+import EventCreate from '@/pages/EventCreate.vue'
+import EventList from '@/pages/EventList.vue'
+import EventShow from '@/pages/EventShow.vue'
 import NotFound from '@/pages/NotFound.vue'
 import NetworkIssue from '@/pages/NetworkIssue.vue'
+import Example from '@/pages/Example.vue'
 import NProgress from 'nprogress'
 import store from '@/store'
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/example',
+    component: Example,
+  },
   {
     path: '/',
     name: 'event-list',
