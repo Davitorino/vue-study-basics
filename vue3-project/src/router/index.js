@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import EventList from '../pages/EventList.vue'
+import EventCreate from '../pages/EventCreate.vue'
 import EventLayout from '../pages/event/Layout.vue'
 import EventDetails from '../pages/event/Details.vue'
 import EventRegister from '../pages/event/Register.vue'
@@ -8,7 +9,7 @@ import About from '../pages/About.vue'
 import NotFound from '../pages/NotFound.vue'
 import NetworkError from '../pages/NetworkError.vue'
 import EventService from '@/services/EventService.js'
-import GStore from '@/store'
+import GStore from '@/store/GStore.js'
 import NProgress from 'nprogress'
 
 const routes = [
@@ -56,6 +57,11 @@ const routes = [
         component: EventEdit,
       },
     ],
+  },
+  {
+    path: '/event/create',
+    name: 'EventCreate',
+    component: EventCreate,
   },
   {
     path: '/event/:afterEvent(.*)',
